@@ -1,0 +1,22 @@
+{
+  "name": "webme2",
+  "version": "1.0.0",
+  "description": "my personal website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daymos/webme-single-canvas.git"
+  },
+  "keywords": [
+    "JS"
+  ],
+  "author": "mattia spinelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daymos/webme-single-canvas/issues"
+  },
+  "homepage": "https://github.com/daymos/webme-single-canvas#readme"
+}
