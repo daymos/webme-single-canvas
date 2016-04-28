@@ -62,9 +62,6 @@ p{
     border-radius: 5%;
     padding: 5%;
     text-align: justify;
-	
-	
-
 }
 #content{
 	position: absolute;
@@ -72,12 +69,18 @@ p{
 	left:50%;
 	-webkit-transform: translate(-50%,-50%);
   	transform: translate(-50%,-50%);
-
+  	 overflow: auto;
+  	
     
 	max-width: 60vh;
-	
-	
-	
+	max-height: 60vh
+}
+#margin-box{
+	border-style: solid;
+    border-color: #E0E4CC;
+    border-width: 1px;
+    border-radius: 5%;
+
 }
 
 	

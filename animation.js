@@ -6,39 +6,26 @@ function draw(canvas,size){
 		var position = randomize()
 		//console.log("is intercepting something?: ",positionActive(position) )
 		if (document.getElementById('title') != null){
-		while(pointIntersectElement(position,'index') ){position = randomize(); console.log("avoiding title")}
+			while(pointIntersectElement(position,'index') ){position = randomize(); console.log("avoiding title")}
 		}else{
 			while(pointIntersectElement(position,'me') ){position = randomize(); console.log("avoiding title")}
-		
-
 		}
-
-
-
-
 
 
 		if(positionActive(position)){console.log("aborting due to overlapping") ;return null}
 		else{
-		
-		if(position[0]< 20 || position[0]> maxWidth-150 || position[1]<10 || position[1]> maxHeight-20) {console.log("aborted"); return null}
-		
+			if(position[0]< 20 || position[0]> maxWidth-150 || position[1]<10 || position[1]> maxHeight-20) {console.log("aborted"); return null}
+			
+			activeAreas[position] = [[position[0]-200,position[1]+60],
+									[position[0]-200+offX,position[1]+60],
+									[position[0]-200+offX,position[1]+60-offY],
+									[position[0]-200,position[1]+60-offY]] 
 
-		activeAreas[position] = [[position[0]-200,position[1]+60],
-								[position[0]-200+offX,position[1]+60],
-								[position[0]-200+offX,position[1]+60-offY],
-								[position[0]-200,position[1]+60-offY]] 
+			var movement = delta()
+			var ctx = canvas.getContext('2d');
 
-
-		//while(positionActive(position)) { position = randomize(); console.log("intersecting")}
-		
-		
-		
-		var movement = delta()
-		var ctx = canvas.getContext('2d');
-
-    	fadeInOut(canvas,randomText(),size,position,movement)
-    	console.log(Object.keys(activeAreas).length)
+    		fadeInOut(canvas,randomText(),size,position,movement)
+    		console.log(Object.keys(activeAreas).length)
     }
     
     
@@ -46,8 +33,6 @@ function draw(canvas,size){
 }
 
 //helper functions
-
-
 function farFromBorder(position){
 
 	if(position[0] >= maxWidth - 1000 && position[0] <= 400) {return false}
@@ -77,11 +62,6 @@ return false
 	  
 	    return inside
 	};
-
-
-
-
-
 
 }
 
@@ -143,8 +123,6 @@ function letters(txt,context,alpha,size, newPosition){
 	}
 
 }
-
-
 
 function hexToRGBA(hex, opacity) {
     return 'rgba(' + (hex = hex.replace('#', '')).match(new RegExp('(.{' + hex.length/3 + '})', 'g')).map(function(l) { return parseInt(hex.length%2 ? l+l : l, 16) }).concat(opacity||1).join(',') + ')';
