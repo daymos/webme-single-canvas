@@ -8,7 +8,7 @@ var animation = fs.readFileSync('./animation.js');
 var delta = fs.readFileSync('./delta.js');
 var avoid = fs.readFileSync('./avoid.js');
 var me = fs.readFileSync('./me.html');
-var avoidMe = fs.readFileSync('./avoidMe.js');
+
 
 function handler(request, response){
   var url = request.url;

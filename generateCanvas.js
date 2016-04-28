@@ -10,7 +10,7 @@ canvas.width  = maxWidth;
 canvas.height = maxHeight;
 canvas.style.zIndex   = -1;
 canvas.style.position = "absolute";
-canvas.style.border   = "1px solid red";
+//canvas.style.border   = "1px solid red";
 canvas.style.backgroundColor = "#272822"
 
 
