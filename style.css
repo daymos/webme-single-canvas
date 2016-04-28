@@ -20,9 +20,12 @@ body{
 
 h1{
 	color:#E0E4CC;
-	position:relative;
+	position:absolute;
 	text-align: center;
-	padding-top: 25%;
+	top:50%;
+	left:50%;
+	-webkit-transform: translate(-50%,-50%);
+  	transform: translate(-50%,-50%);
 
 	
 }
@@ -31,9 +34,14 @@ h1{
 
 h3{
 	color:#fd9720;
-	position:relative;
 	text-align: center;
-	padding-bottom: 25%
+	position:absolute;
+	text-align: center;
+	top:55%;
+	left:50%;
+	-webkit-transform: translate(-50%,-50%);
+  	transform: translate(-50%,-50%);
+
    
 }
 
