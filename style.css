@@ -1,96 +1,78 @@
 body{
-	margin: 0 auto;
-	background-color: #272822;
-
+  margin: 0 auto;
+  background-color: #272822;
 }
 
 #container {
-	position:relative;
-	width: 100%;
-	height: 100%;
-
+  position:relative;
+  width: 100%;
+  height: 100%;
 }
+
 #leftbox{
-	
-
-	
 }
-
-
 
 h1{
-	color:#E0E4CC;
-	position:absolute;
-	text-align: center;
-	top:50%;
-	left:50%;
-	-webkit-transform: translate(-50%,-50%);
-  	transform: translate(-50%,-50%);
-
-	
+  color:#E0E4CC;
+  position:absolute;
+  text-align: center;
+  top:50%;
+  left:50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
- 
-
 h3{
-	color:#fd9720;
-	text-align: center;
-	position:absolute;
-	text-align: center;
-	top:55%;
-	left:50%;
-	-webkit-transform: translate(-50%,-50%);
-  	transform: translate(-50%,-50%);
-
-   
+  color:#fd9720;
+  text-align: center;
+  position:absolute;
+  text-align: center;
+  top:55%;
+  left:50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 
 a{
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 h2{
-	color:#E0E4CC;
-	position:relative;
-	text-align: center;
-	padding-top: 25%;
-
-	
+  color:#E0E4CC;
+  position:relative;
+  text-align: center;
+  padding-top: 25%;
 }
 
 
 p{	
-	color:#E0E4CC;
-	
-	border-style: solid;
-    border-color: #E0E4CC;
-    border-width: 1px;
-    border-radius: 5%;
-    padding: 5%;
-    text-align: justify;
+  color:#E0E4CC;
+
+  border-style: solid;
+  border-color: #E0E4CC;
+  border-width: 1px;
+  border-radius: 5%;
+  padding: 5%;
+  text-align: justify;
 }
+
 #content{
-	position: absolute;
-	top:50%;
-	left:50%;
-	-webkit-transform: translate(-50%,-50%);
-  	transform: translate(-50%,-50%);
-  	 overflow: auto;
-  	
-    
-	max-width: 60vh;
-	max-height: 60vh
+  position: absolute;
+  top:50%;
+  left:50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  overflow: auto;
+
+  max-width: 60vh;
+  max-height: 60vh
 }
+
 #margin-box{
-	border-style: solid;
-    border-color: #E0E4CC;
-    border-width: 1px;
-    border-radius: 5%;
-
+  border-style: solid;
+  border-color: #E0E4CC;
+  border-width: 1px;
+  border-radius: 5%;
 }
-
-	
-
-

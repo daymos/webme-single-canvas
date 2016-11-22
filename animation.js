@@ -1,9 +1,10 @@
 
-setInterval(draw,5,canvas,'1.5ch');
+setInterval(draw, 5, canvas, '1.5ch');
 
 function draw(canvas,size){
 		var offX = 800,offY = 80 // use this to control collision free area around moving text
 		var position = randomize()
+    
 		//console.log("is intercepting something?: ",positionActive(position) )
 		if (document.getElementById('title') != null){
 			while(pointIntersectElement(position,'index') ){position = randomize(); console.log("avoiding title")}
